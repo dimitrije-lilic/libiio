@@ -8,7 +8,7 @@
 
     <title>Examples &#8212; libiio v1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=d3f78147" />
+    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=fb8972a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=4c969af8" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=748bb8f3" />
     <script src="../../_static/tabs.js?v=3ee01567"></script>
@@ -68,10 +68,10 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
+        <a id="logo-org" href="https://developer.analog.com/" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         
-        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs">Docs</label>
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs">Documentation</label>
         
         <a id="logo" href="../../index.html">
           <div>libiio</div>
@@ -132,6 +132,7 @@ Content on this topic
 <li class="toctree-l2"><a class="reference internal" href="../../install/source.html">Building from Source</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../migration.html">Libiio 0.x to 1.x API update guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory of Operation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../usage.html">Usage Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
@@ -256,9 +257,9 @@ Content on this topic
     <span class="k">for</span> <span class="n">dev</span> <span class="ow">in</span> <span class="n">ctx</span><span class="o">.</span><span class="n">devices</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">dev</span><span class="o">.</span><span class="n">channels</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">chan</span> <span class="ow">in</span> <span class="n">dev</span><span class="o">.</span><span class="n">channels</span><span class="p">:</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> - </span><span class="si">{}</span><span class="s2"> - </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ctxname</span><span class="p">,</span> <span class="n">dev</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">chan</span><span class="o">.</span><span class="n">_id</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">{}</span><span class="s2"> - </span><span class="si">{}</span><span class="s2"> - </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ctxname</span><span class="p">,</span> <span class="n">dev</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">chan</span><span class="o">.</span><span class="n">_id</span><span class="p">))</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> - </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ctxname</span><span class="p">,</span> <span class="n">dev</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">{}</span><span class="s2"> - </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ctxname</span><span class="p">,</span> <span class="n">dev</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
 </pre></div>
 </div>
 </section>

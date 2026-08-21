@@ -8,7 +8,7 @@
 
     <title>Channel &#8212; libiio v1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=d3f78147" />
+    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=fb8972a4" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=4c969af8" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=748bb8f3" />
     <script src="../../_static/tabs.js?v=3ee01567"></script>
@@ -68,10 +68,10 @@
     </div>
     <div id="right">
       <span>
-        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
+        <a id="logo-org" href="https://developer.analog.com/" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         
-        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs">Docs</label>
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs">Documentation</label>
         
         <a id="logo" href="../../index.html">
           <div>libiio</div>
@@ -211,6 +211,7 @@
 <li><a class="reference internal" href="#function-iio.Channel.is_enabled"><code class="docutils literal notranslate"><span class="pre">is_enabled()</span></code></a></li>
 <li><a class="reference internal" href="#function-iio.Channel.read"><code class="docutils literal notranslate"><span class="pre">read()</span></code></a></li>
 <li><a class="reference internal" href="#function-iio.Channel.write"><code class="docutils literal notranslate"><span class="pre">write()</span></code></a></li>
+<li><a class="reference internal" href="#function-iio.Channel.refresh_format"><code class="docutils literal notranslate"><span class="pre">refresh_format()</span></code></a></li>
 <li><a class="reference internal" href="#var-iio.Channel.dev"><code class="docutils literal notranslate"><span class="pre">dev</span></code></a></li>
 <li><a class="reference internal" href="#var-iio.Channel.name"><code class="docutils literal notranslate"><span class="pre">name</span></code></a></li>
 <li><a class="reference internal" href="#var-iio.Channel.id"><code class="docutils literal notranslate"><span class="pre">id</span></code></a></li>
@@ -270,6 +271,7 @@ Content on this topic
 <li class="toctree-l2"><a class="reference internal" href="../../install/source.html">Building from Source</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../migration.html">Libiio 0.x to 1.x API update guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../theory.html">Theory of Operation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../usage.html">Usage Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">Examples</a></li>
@@ -958,6 +960,17 @@ Content on this topic
 </dd>
 <dt class="field-odd">Return<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The number of bytes written.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cs function">
+<dt class="sig sig-object cs" id="function-iio.Channel.refresh_format">
+<span class="target" id="classiio_1_1Channel_1ab0ef2f2bad9119731f7f3aec78eaafdd"></span><span class="pre">void</span> <span class="sig-name descname"><span class="pre">refresh_format</span></span> <span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#function-iio.Channel.refresh_format" title="Link to this definition"></a></dt>
+<dd><p>Refresh the channel’s data format from the hardware. Call this after changing any attribute that affects channel format (e.g., oversampling_ratio) and before opening a buffer. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws IioLib.IIOException<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The format could not be refreshed.</p>
 </dd>
 </dl>
 </dd></dl>
